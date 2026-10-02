@@ -339,6 +339,10 @@ def _print_progress(current: int, total: int, label: str = ""):
 # ── Main ─────────────────────────────────────────────────
 
 def main():
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="replace")
+
     print(BANNER)
 
     parser = argparse.ArgumentParser(

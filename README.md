@@ -21,6 +21,16 @@ require explicit setup, and motor/sensor controls are disabled by default.
 The project can also run on Windows for development, but Raspberry Pi-specific
 hardware features are not available there.
 
+## Download and install
+
+The robot application runs on Raspberry Pi OS; a Windows `.exe` cannot run the
+GPIO/motor application itself. To install it from a Windows PC, download
+**BottyRobot-Flasher-Windows-x64.exe** from the
+[latest release](https://github.com/Uyruw3/BottyRobot/releases/latest), then
+follow its prompts to connect to the Pi. Alternatively, install directly on
+the Pi using the steps below. The Flasher is a Windows installer/transfer
+utility, not the robot application.
+
 ## Install and run
 
 ```bash

@@ -9,7 +9,7 @@
 import sys
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(SPECPATH).resolve().parent
 
 # Collect all data files to embed
 datas = []
